@@ -1,13 +1,7 @@
-.alert {
-    --alert-text-color: black;
-    --alert-accent-color: tomato;
-}
 
-.alert-text {
-    color: var(--alert-text-color);
-    border: 1px solid var(--alert-accent-color);
-}
 
-.alert-icon {
-    background-color: var(--alert-accent-color);
+h1 {
+    font-family: 'Tangerine',
+cursive;
+font-weight: 700;
 }
