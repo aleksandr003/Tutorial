@@ -1,7 +1,12 @@
+div {
+  width: 500px;
+  height: 500px;
+  background-color: orange;
+  margin: 200px auto;
+}
 
-
-h1 {
-    font-family: 'Tangerine',
-cursive;
-font-weight: 700;
+@media screen and (min-width: 800px), {
+  div {
+    background-color: red;
+  }
 }

@@ -1,0 +1,8 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="400"
+  height="200"
+  style="outline: 2px dashed #2a2a2a;"
+>
+  <circle r="75" cx="50%" cy="50%" fill="tomato" />
+</svg>
