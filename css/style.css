@@ -1,12 +1,1 @@
-div {
-  width: 500px;
-  height: 500px;
-  background-color: orange;
-  margin: 200px auto;
-}
 
-@media screen and (min-width: 800px), {
-  div {
-    background-color: red;
-  }
-}
