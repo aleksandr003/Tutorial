@@ -1,49 +1,19 @@
-"use strict";
-/*
- * Події елементів форм. focus, blur, change, input, submit
- */
+let elemUl = document.querySelector("#elem");
+elemUl.addEventListener("click", func);
 
-const usernameInputEl = document.querySelector(".js-username-input");
-const checkboxEl = document.querySelector(".js-policy-checkbox");
-const usernameOutputEl = document.querySelector(".js-username-output");
-const submitBtnEl = document.querySelector(".js-contact-form-submit");
-const contactFormEl = document.querySelector(".js-contact-form");
+function func(event) {
+  let elemTarget = event.target.tagName.toLowerCase();
+  console.log(elemTarget);
 
-// usernameInputEl.addEventListener('focus', () => {
-//   usernameInputEl.style.outline = '1px solid teal';
-// });
-
-// usernameInputEl.addEventListener('blur', () => {
-//   usernameInputEl.style.outline = '1px solid tomato';
-// });
-
-// usernameInputEl.addEventListener('input', () => {
-//   console.log('Hello');
-// });
-
-// usernameInputEl.addEventListener('change', () => {
-//   console.log('Hello');
-// });
-
-// checkboxEl.addEventListener('change', () => {
-//   console.log('Hello');
-// });
-
-usernameInputEl.addEventListener("input", () => {
-  usernameOutputEl.textContent = usernameInputEl.value;
-});
-
-checkboxEl.addEventListener("change", () => {
-  if (checkboxEl.checked && usernameInputEl.value !== "") {
-    submitBtnEl.disabled = false;
-  } else {
-    submitBtnEl.disabled = true;
+  if (elemTarget === "ul") {
+    let newP = document.createElement("li");
+    newP.innerHTML = "text";
+    elemUl.appendChild(newP);
   }
-});
 
-contactFormEl.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  // contactFormEl.reset();
-  console.log("Hello");
-});
+  if (elemTarget === "li") {
+    let x = "!";
+    console.log(this);
+    event.target.innerHTML += x;
+  }
+}
