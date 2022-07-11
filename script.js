@@ -1,19 +1,23 @@
-let elemUl = document.querySelector("#elem");
-elemUl.addEventListener("click", func);
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
 
-function func(event) {
-  let elemTarget = event.target.tagName.toLowerCase();
-  console.log(elemTarget);
+// const {
+//   name,
+//   tag,
+//   stats: { followers, views: userViews, likes: userLikes = 0 },
+// } = user;
 
-  if (elemTarget === "ul") {
-    let newP = document.createElement("li");
-    newP.innerHTML = "text";
-    elemUl.appendChild(newP);
-  }
+// console.log(name);
+// console.log(tag);
+// console.log(userLikes);
 
-  if (elemTarget === "li") {
-    let x = "!";
-    console.log(this);
-    event.target.innerHTML += x;
-  }
-}
+const arr = [1, 2, 3, 4, 5];
+const arr2 = [...arr, 44, 54];
+console.log(...arr);
